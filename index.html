@@ -8,13 +8,17 @@
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         background-color: white;
-        color: green;
+        color: forestgreen;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
     }
     .title {
-        text-align: center;
-        font-size: 120px;
+        font-size: 200px;
         opacity: 0;
         animation: fadeIn 2s forwards;
     }
@@ -26,10 +30,27 @@
             opacity: 1;
         }
     }
+    .subtitle {
+        font-size: 62px;
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+        opacity: 0;
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .subtitle:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .subtitle:active {
+        color: olive; /* Change color when clicked */
+    }
 </style>
 </head>
 <body>
     <div class="title">Let's Talk</div>
+    <a href="quiz.html" class="subtitle">antibiotics</a>
 </body>
 </html>
 

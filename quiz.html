@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellness Quiz</title>
+<link rel="stylesheet" href="style.css">
+<p style="font-family: 'Helvetica Neue', sans-serif;"></p>
+</head>
+<body>
+    <div id="quiz">
+        <h1>Your Knowledge on Antibiotics</h1>
+        <form id="quizForm">
+            <label for="age">What is your Age?</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label>What is Your Gender?</label><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required><br><br>
+            
+
+            <label for="coldFrequency">How often do you get the common cold in a year?</label>
+            <input type="text" id="coldFrequency" name="coldFrequency" required><br><br>
+
+            <label for="medicine">How do you treat your sickness?</label><br>
+            <input type="checkbox" id="medicine" name="treatments" value="medicine">
+            <label for="medicine">Medicine</label><br>
+            <input type="checkbox" id="naturalHerbs" name="treatments" value="naturalHerbs">
+            <label for="naturalHerbs">Natural Herbs</label><br>
+            <input type="checkbox" id="alternativeMedication" name="treatments" value="alternativeMedication">
+            <label for="alternativeMedication">Alternative Medication</label><br>
+            <input type="checkbox" id="nothing" name="treatments" value="nothing">
+            <label for="nothing">Nothing</label><br>
+            <input type="checkbox" id="otherTreatment" name="treatments" value="otherTreatment">
+            <label for="otherTreatment">Other</label><br><br>
+
+            <label for="eatingHabits">On a scale from 1-5, How healthy is your eating habits?</label><br>
+            <input type="range" id="eatingHabits" name="eatingHabits" min="1" max="5" required><br><br>
+
+            <label for="exerciseFrequency">On a scale from 1-5, how often do you exercise?</label><br>
+            <input type="range" id="exerciseFrequency" name="exerciseFrequency" min="1" max="5" required><br><br>
+
+            <label for="antibioticTreatments">On average, do you rely on antibiotic treatments?</label><br>
+            <select id="antibioticTreatments" name="antibioticTreatments" required>
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="no">No</option>
+                <option value="Sometimes">Sometimes</option>
+            </select><br><br>
+
+            <label for="antibioticsKnowledge">What do you know about antibiotics?</label><br>
+            <textarea id="antibioticsKnowledge" name="antibioticsKnowledge" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>
